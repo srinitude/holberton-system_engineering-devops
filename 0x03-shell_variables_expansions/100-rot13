@@ -1,2 +1,2 @@
 #!/bin/bash
-cat - | tr 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
+cat - | tr [A-M,N-Z,a-m,n-z] [N-Z,A-M,n-z,a-m]
