@@ -25,6 +25,7 @@ Credits: [Sellorekt](https://soundcloud.com/sellorekt/the-harder-it-gets)
    * [Create a script that deletes all files in the current working directory that end with the character `~`.](https://github.com/srinitude/holbertonschool-sysadmin_devops/blob/master/0x00-shell_basics/16-clean_emacs)
    * [Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/holberton` in the current directory.](https://github.com/srinitude/holbertonschool-sysadmin_devops/blob/master/0x00-shell_basics/17-tree)
    * [Write a command that lists all the files and directories of the current directory, separated by commas (`,`).](https://github.com/srinitude/holbertonschool-sysadmin_devops/blob/master/0x00-shell_basics/18-commas)
+
      	    * Directory names should end with a slash (`/`)
 	    * Files and directories starting with a dot (`.`) should be listed
 	    * The listing should be alpha ordered, except for the directories `.` and `..` which should be listed at the very beginning
