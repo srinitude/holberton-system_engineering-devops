@@ -1,3 +1,3 @@
-# SysAdmin/DevOps
+# SysAdmin & DevOps
 
-Every single Holberton project related to SysAdmin and DevOps work
+![SysAdmin and DevOps](https://raw.githubusercontent.com/srinitude/holbertonschool-sysadmin_devops/master/SysAdminDevOpsTopicImage.jpg)
