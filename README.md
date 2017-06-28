@@ -5,10 +5,10 @@
 Credits: [Sellorekt](https://soundcloud.com/sellorekt/the-harder-it-gets)
 
 # Table of Contents
-* [Welcome](##Welcome)
-* [Requirements](##Requirements)
-* [Installation](##Installation)
-* [Topics](##Topics)
+* [Welcome](#welcome)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Topics](#topics)
 
 ## Welcome
 Lots of temporary text here
