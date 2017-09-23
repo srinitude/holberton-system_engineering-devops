@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# /etc/passwd is more fun than it looks
+
+IFS=":"
+while read -r username password uid gid info home cshell
+do
+    echo "The user $username is part of the $gid gang, lives in $home and rides $cshell. $uid's place is protected by the passcode $password, more info about the user here: $info"
+done < /etc/passwd
