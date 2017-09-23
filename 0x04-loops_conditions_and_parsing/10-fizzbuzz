@@ -2,5 +2,5 @@
 # Fizzy Buzz
 
 for i in {1..100}; do
-
+    
 done
