@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Displays PID of bash
+# shellcheck disable=SC2009
 
 ps -uf | grep bash
