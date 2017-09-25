@@ -1,14 +1,23 @@
 #!/usr/bin/env bash
 # Does a plethora of tasks
 
-trap 'echo "I hate the kill command"' SIGTERM
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'rm /var/run/holbertonscript.pid' SIGQUIT SIGTERM
+terminate()
+{
+    echo "I hate the kill command"
+}
 
-touch "/var/run/holbertonscript.pid"
-pidof "$0" > "/var/run/holbertonscript.pid"
-t="True"
-while [ "$t" ]; do
+quit()
+{
+    terminate
+    rm /var/run/holbertonscript.pid
+}
+
+trap 'terminate' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'quit' SIGQUIT
+
+echo $$ > /var/run/holbertonscript.pid
+while [ true ]; do
     echo "To infinity and beyond"
     sleep 2
 done
