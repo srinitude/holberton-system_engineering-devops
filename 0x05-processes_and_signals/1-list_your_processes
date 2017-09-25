@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-ps afux
+# Displays list of currently running processes
+
+ps -afux
