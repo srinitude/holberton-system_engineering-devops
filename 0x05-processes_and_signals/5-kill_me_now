@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Kill infinity and beyond process
-# shellcheck disable=SC2009
 
-process="$(ps -afx | grep "bash ./4-to_infinity_and_beyond" | cut -d' ' -f1 | tail -n+2)"
+process="$(pidof bash ./4-to_infinity_and_beyond)"
 kill "$process"
