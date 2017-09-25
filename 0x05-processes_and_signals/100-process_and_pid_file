@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Does a plethora of tasks
+
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'rm /var/run/holbertonscript.pid' SIGQUIT SIGTERM
+
+touch "/var/run/holbertonscript.pid"
+pidof "$0" > "/var/run/holbertonscript.pid"
+t="True"
+while [ "$t" ]; do
+    echo "To infinity and beyond"
+    sleep 2
+done

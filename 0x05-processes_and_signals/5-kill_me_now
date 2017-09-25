@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Kill infinity and beyond process
 
-pkill -f "bash ./4-to_infinity_and_beyond"
+kill -SIGTERM "$(pgrep -f 4-to_infinity_and_beyond)"
