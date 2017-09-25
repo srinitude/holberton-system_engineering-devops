@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Kill infinity and beyond process
+# Kills highlander process
 
 pkill -f -SIGKILL "bash ./7-highlander"
