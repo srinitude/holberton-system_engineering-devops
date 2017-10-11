@@ -4,4 +4,4 @@
 apt-get update
 apt-get -y install apache2
 service apache2 restart
-echo "Holberton School" > /var/www/html/index.html
+echo "Hello Holberton" > /var/www/html/index.html
