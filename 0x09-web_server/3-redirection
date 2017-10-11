@@ -1,4 +1,4 @@
-!/usr/bin/env bash
+#!/usr/bin/env bash
 # Redirect an endpoint to another page
 
 apt-get update
