@@ -66,6 +66,8 @@ new="server {
         #       deny all;
         #}
 }"
+cest="Ceci n'est pas une page"
 echo "$new" > /etc/nginx/sites-available/default
+echo "$cest" > /usr/share/nginx/html/custom_404.html
 service nginx stop
 service nginx start
