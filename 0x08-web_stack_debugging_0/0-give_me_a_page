@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 # Install nginx on remote server
-
-apt-get update
-apt-get -y install apache2
-service apache2 restart
-echo "Hello Holberton" > /var/www/html/index.html
+sudo service apache restart
