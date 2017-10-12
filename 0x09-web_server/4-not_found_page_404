@@ -16,7 +16,6 @@ new="server {
         location / {
                 # First attempt to serve request as file, then
                 # as directory, then fall back to displaying a 404.
-                try_files $uri $uri/ =404;
                 # Uncomment to enable naxsi on this location
                 # include /etc/nginx/naxsi.rules
         }
@@ -26,7 +25,7 @@ new="server {
         }
 
         error_page 404 /custom_404.html;
-        location = /custom_404.html {
+        location /custom_404.html {
                 root /usr/share/nginx/html;
                 internal;
         }
@@ -67,6 +66,7 @@ new="server {
         #}
 }"
 cest="Ceci n'est pas une page"
+echo "Holberton School" > /usr/share/nginx/html/index.html
 echo "$new" > /etc/nginx/sites-available/default
 echo "$cest" > /usr/share/nginx/html/custom_404.html
 service nginx stop
