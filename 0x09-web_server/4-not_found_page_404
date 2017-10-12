@@ -17,12 +17,6 @@ new="server {
                 try_files $uri $uri/ =404;
         }
 
-        error_page 404 /404.html;
-        location = /404.html {
-                root /usr/share/nginx/html;
-                internal;
-        }
-
         location /redirect_me {
                 return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
         }
