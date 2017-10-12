@@ -23,7 +23,7 @@ new="server {
         }
 
         location @sorry {
-                return 404 'Ceci n'est pas une page';
+                echo 'Ceci n'est pas une page';
         }
 }"
 echo "$new" > /etc/nginx/sites-available/default
