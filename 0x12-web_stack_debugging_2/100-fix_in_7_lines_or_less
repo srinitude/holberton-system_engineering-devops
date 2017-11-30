@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
-# Become another user
-sudo -u "$1" whoami
-echo
+# Gets nginx running as nginx user and listening on 8080 on all active IPs
+sudo pkill apache2
+sudo sed -i 's/80/8080/' /etc/nginx/sites-available/default
+sudo chown nginx:nginx /etc/nginx/nginx.conf
+sudo chmod 744 /etc/nginx/nginx.conf
+sudo -u nginx nginx
