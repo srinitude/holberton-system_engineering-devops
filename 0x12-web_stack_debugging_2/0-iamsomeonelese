@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Become another user
+su "$1"
+user=$(whoami)
+echo "$user"
+exit
