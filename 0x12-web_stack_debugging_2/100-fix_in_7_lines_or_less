@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Become another user
 sudo -u "$1" whoami
+echo
