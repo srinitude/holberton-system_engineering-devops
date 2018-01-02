@@ -14,7 +14,6 @@ todos_url = base_url + "todos?userId={}".format(user_id)
 user = requests.get(user_url).json()
 todos = requests.get(todos_url).json()
 
-
 fullname = user.get("name")
 count = 0
 total = len(todos)
