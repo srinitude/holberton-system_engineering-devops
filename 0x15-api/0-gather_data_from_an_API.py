@@ -3,8 +3,8 @@
 Script to retrieve an employee and his/her todo list progress
 """
 if __name__ == "__main__":
-    import sys
     import requests
+    import sys
 
     base_url = "https://jsonplaceholder.typicode.com/"
     user_id = sys.argv[1]
@@ -25,7 +25,7 @@ if __name__ == "__main__":
         if todo.get("completed"):
             count += 1
             title = todo.get("title")
-            tasks += "     {}\n".format(title)
+            tasks += "\t{}\n".format(title)
 
             heading = "Employee {} is done with tasks({}/{}):".format(fullname,
                                                                       count,
