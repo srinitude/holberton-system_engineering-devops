@@ -25,7 +25,7 @@ if __name__ == "__main__":
         if todo.get("completed"):
             count += 1
             title = todo.get("title")
-            tasks += "     {}\n".format(title)
+            tasks += "\t{}\n".format(title)
 
             heading = "Employee {} is done with tasks({}/{}):".format(fullname,
                                                                       count,
