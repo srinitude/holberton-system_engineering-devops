@@ -16,7 +16,8 @@ def recurse(subreddit, hot_list=[], fullname=""):
         base_url += "?after={}".format("fullname")
     headers = {'user-agent': 'safari:holberton/0.1.0 (by /u/srinitude)'}
     response = requests.get(base_url,
-                            headers=headers)
+                            headers=headers,
+                            allow_redirects=False)
     if response.status_code != 200:
         return None
     response = response.json()
