@@ -11,9 +11,10 @@ def recurse(subreddit, hot_list=[], fullname=""):
     """
     if type(subreddit) is not str:
         return None
-    base_url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+    s = subreddit
+    base_url = "https://www.reddit.com/r/{}/hot.json?limit=100".format(s)
     if len(fullname) > 0:
-        base_url += "?after={}".format("fullname")
+        base_url += "&after={}".format("fullname")
     headers = {'user-agent': 'safari:holberton/0.1.0 (by /u/srinitude)'}
     response = requests.get(base_url,
                             headers=headers,
@@ -26,4 +27,5 @@ def recurse(subreddit, hot_list=[], fullname=""):
         return hot_list
     hot_posts = response.get("data").get("children")
     hot_list.extend(map(lambda p: p.get("data").get("title"), hot_posts))
+    print(len(hot_list))
     return recurse(subreddit, hot_list, after)
