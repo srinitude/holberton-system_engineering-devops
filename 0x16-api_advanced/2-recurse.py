@@ -22,7 +22,6 @@ def recurse(subreddit, hot_list=[], fullname=""):
     response = response.json()
     after = response.get("data").get("after")
     hot_posts = response.get("data").get("children")
-    print(len(hot_posts))
     if len(hot_posts) == 0:
         return hot_list
     for post in hot_posts:
