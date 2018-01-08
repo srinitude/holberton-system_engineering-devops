@@ -21,9 +21,9 @@ def recurse(subreddit, hot_list=[], fullname=""):
         return None
     response = response.json()
     after = response.get("data").get("after")
-    hot_posts = response.get("data").get("children")
-    if len(hot_posts) == 0:
+    if after is None:
         return hot_list
+    hot_posts = response.get("data").get("children")
     for post in hot_posts:
         title = post.get("data").get("title")
         hot_list.append(title)
