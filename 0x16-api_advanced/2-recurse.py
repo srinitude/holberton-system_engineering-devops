@@ -27,5 +27,4 @@ def recurse(subreddit, hot_list=[], fullname=""):
         return hot_list
     hot_posts = response.get("data").get("children")
     hot_list.extend(map(lambda p: p.get("data").get("title"), hot_posts))
-    print(len(hot_list))
     return recurse(subreddit, hot_list, after)
