@@ -52,7 +52,7 @@ This repository contains projects on:
 ## Installation
 In your terminal, git clone the directory with the following command:
 ```
-git clone https://github.com/feliciahsieh/[Github project directory]
+git clone https://github.com/srinitude/[Github project directory]
 ```
 
 ## Usage
@@ -85,4 +85,4 @@ git clone https://github.com/feliciahsieh/[Github project directory]
 22. [0x16-api_advanced](./0x16-api_advanced)
 
 ## Credits
-Work is owned and maintained by Felicia Hsieh ([@feliciahsiehsw](https://twitter.com/feliciahsiehsw)). A few projects were group projects, and joint ownership will be reflected in each respective project README.md file.
+Work is owned and maintained by Kiren Srinivasan ([@srinitude](https://twitter.com/srinitude)). A few projects were group projects, and joint ownership will be reflected in each respective project README.md file.
